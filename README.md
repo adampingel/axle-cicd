@@ -6,7 +6,8 @@ testbed for refreshing tools in axle release process
 
 ### High priority must-haves
 
-* ci-release sbt plugin (tag, create, release artifact)
+* Covered in [this post](https://eed3si9n.com/auto-publish-sbt-plugin-from-github-actions/)
+* Install [sbt-ci-release](https://github.com/sbt/sbt-ci-release) sbt plugin (tag, create, release artifact)
 * Spiewak’s gh action sbt plugin (compile via github action & run tests)
 * sitegen with mdoc
 * release site and jar
