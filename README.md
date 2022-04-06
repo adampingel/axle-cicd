@@ -9,7 +9,8 @@ testbed for refreshing tools in axle release process
 * Covered in [this post](https://eed3si9n.com/auto-publish-sbt-plugin-from-github-actions/)
 * Install [sbt-ci-release](https://github.com/sbt/sbt-ci-release) sbt plugin (tag, create, release artifact)
 * Spiewak’s gh action sbt plugin (compile via github action & run tests)
-* sitegen with mdoc
+* sitegen with mdoc / Laika?
+  * https://github.com/http4s/http4s/pull/5313
 * release site and jar
 
 ### Nice-to-have
