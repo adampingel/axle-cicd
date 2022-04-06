@@ -10,3 +10,5 @@ lazy val root = project
 
     libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
   )
+
+enablePlugins(LaikaPlugin)
