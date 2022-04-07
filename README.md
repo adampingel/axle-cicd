@@ -6,8 +6,9 @@ testbed for refreshing tools in axle release process
 
 ### High priority must-haves
 
-* publish site to gh pages
+* [sbt-ghpages](https://github.com/sbt/sbt-ghpages)
 * dns alias for cicd.axle-lang.org
+* use `sbt-site` ?
 * [sbt-ci-release](https://github.com/sbt/sbt-ci-release) sbt plugin (tag, create, release artifact)
 * Spiewak’s gh action sbt plugin (compile via github action & run tests)
 * release site and jar
