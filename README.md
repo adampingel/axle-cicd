@@ -6,7 +6,9 @@ testbed for refreshing tools in axle release process
 
 ### High priority must-haves
 
-* laika
+* mv Foo and Bar to axle-foo directory
+* fix confusion about List[Int]
+* mv Laika md files to axle-docs
 * mdoc
 * publish site to gh pages
 * dns alias for cicd.axle-lang.org
@@ -27,8 +29,19 @@ testbed for refreshing tools in axle release process
 `sbt compile`
 `sbt run`
 `sbt console`
-`sbt laikaSite`
-`sbt laikaPreview` then browse to [https://localhost:4242](https://localhost:4242)
+
+## Build steps
+
+```bash
+sbt docs/mdoc
+sbt docs/laikaSite
+```
+
+```bash
+sbt docs/laikaPreview
+```
+
+then browse to [https://localhost:4242](https://localhost:4242)
 
 ## References
 

@@ -13,3 +13,9 @@ Theory
 ### Examples Section
 
 Example A
+
+```scala mdoc
+val x = 1
+
+List(x, x)
+```
