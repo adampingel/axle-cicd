@@ -14,6 +14,7 @@ lazy val docs = project
     name := "axle-docs",
     scalaVersion := scala3Version,
     mdocIn := file("axle-docs/src/site/mdoc"),
+    mdocOut := file("axle-docs/target/mdoc"),
     Laika / sourceDirectories := Seq(file("axle-docs/target/mdoc"))
   ).dependsOn(root)
   .enablePlugins(MdocPlugin)

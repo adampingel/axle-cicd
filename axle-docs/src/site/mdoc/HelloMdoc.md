@@ -4,6 +4,6 @@ hello, mdoc
 
 ```scala mdoc
 val x = 1
-
-List(x, x)
 ```
+
+TODO: add back `List(x, x)`
