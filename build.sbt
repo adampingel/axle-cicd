@@ -1,9 +1,9 @@
 val scala3Version = "3.1.1"
 
-lazy val root = project
-  .in(file("."))
+lazy val foo = project
+  .in(file("axle-foo"))
   .settings(
-    name := "axle-cicd",
+    name := "axle-foo",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
@@ -16,7 +16,7 @@ lazy val docs = project
     mdocIn := file("axle-docs/src/site/mdoc"),
     mdocOut := file("axle-docs/target/mdoc"),
     Laika / sourceDirectories := Seq(file("axle-docs/target/mdoc"))
-  ).dependsOn(root)
+  ).dependsOn(foo)
   .enablePlugins(MdocPlugin)
   .enablePlugins(LaikaPlugin)
 

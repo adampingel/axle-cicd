@@ -6,8 +6,9 @@ testbed for refreshing tools in axle release process
 
 ### High priority must-haves
 
-* mv Foo and Bar to axle-foo directory
-* mdoc: fix Laika confusion about List[Int]
+* include Foo and Bar usage in docs
+* fix Laika confusion about List[Int] in scala blocks
+
 * publish site to gh pages
 * dns alias for cicd.axle-lang.org
 * [sbt-ci-release](https://github.com/sbt/sbt-ci-release) sbt plugin (tag, create, release artifact)
@@ -31,8 +32,7 @@ testbed for refreshing tools in axle release process
 ## Build steps
 
 ```bash
-sbt docs/mdoc
-sbt docs/laikaSite
+sbt clean docs/mdoc docs/laikaSite
 ```
 
 ```bash
