@@ -10,6 +10,8 @@ lazy val foo = project
   )
 
 lazy val docs = project
+  .dependsOn(foo)
+  .enablePlugins(MdocPlugin, LaikaPlugin, GhpagesPlugin)
   .settings(
     name := "axle-docs",
     scalaVersion := scala3Version,
@@ -18,9 +20,6 @@ lazy val docs = project
     Laika / sourceDirectories := Seq(file("axle-docs/target/mdoc")),
     laikaExtensions ++= Seq(
       laika.markdown.github.GitHubFlavor,
-      laika.parse.code.SyntaxHighlighting)
-  ).dependsOn(foo)
-  .enablePlugins(MdocPlugin)
-  .enablePlugins(LaikaPlugin)
-
-  // axle-docs/target/mdoc
+      laika.parse.code.SyntaxHighlighting),
+    git.remoteRepo := "git@github.com:adampingel/axle-cicd.git"
+  )
