@@ -29,6 +29,10 @@ lazy val docs = project
       laika.markdown.github.GitHubFlavor,
       laika.parse.code.SyntaxHighlighting),
     siteSourceDirectory := file("axle-docs/target/site"),
+    excludeFilter in ghpagesCleanSite :=
+      new FileFilter{
+        def accept(f: File) = (ghpagesRepository.value / "CNAME").getCanonicalPath == f.getCanonicalPath
+      } || "versions.html",
     git.remoteRepo := "git@github.com:adampingel/axle-cicd.git"
   )
 
