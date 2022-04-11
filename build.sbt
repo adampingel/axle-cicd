@@ -9,8 +9,7 @@ lazy val foo = project
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test",
-    publishTo := sonatypePublishToBundle.value,
-    sonatypeProfileName := "org.axle-lang"
+    publishTo := sonatypePublishToBundle.value
   )
 
 lazy val docs = project
