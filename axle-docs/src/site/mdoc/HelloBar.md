@@ -1,6 +1,6 @@
-# Hello MDoc
+# Hello Bar
 
-hello, mdoc
+hello, Bar! (mdoc)
 
 ```scala mdoc
 val x = 1
@@ -8,7 +8,7 @@ val x = 1
 List(x, x)
 ```
 
-Hit the bar
+Hit the Bar
 
 ```scala mdoc
 import axle.cicd.Bar
