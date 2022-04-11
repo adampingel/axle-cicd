@@ -5,6 +5,7 @@ testbed for refreshing tools in axle release process
 ## TO DO
 
 * [sbt-sonatype](https://github.com/xerial/sbt-sonatype)
+
 * [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
   * tag, create, release artifact
 * [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
@@ -12,10 +13,22 @@ testbed for refreshing tools in axle release process
 
 ### Before port to axle
 
+* What's writing to `./docs`?
+
+* custom 404
+* 404 redirect.  Add this to 404.md header:
+
+```md
+layout: forward
+target: https://cicd.axle-lang.org
+```
+
+* google analytics
+* ghpagesCleanSite leaving stale HelloMDoc.html
+
+* generate image during axle-foo test and then move into laika site
 * home icon (at top)
 * remove .html from links
-* stale Hello MDoc lingers
-* custom 404
 
 ### Later
 
@@ -44,7 +57,7 @@ sbt docs/laikaPreview
 then browse to [https://localhost:4242](https://localhost:4242)
 
 ```bash
-sbt docs/ghpagesPushSite
+sbt docs/ghpagesCleanSite docs/ghpagesPushSite
 ```
 
 Verify by browsing to the [site](https://adampingel.github.io/axle-cicd/)
