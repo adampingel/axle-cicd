@@ -4,13 +4,13 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-* [custom domain for github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
-  * use [https://cicd.axle-lang.org](https://cicd.axle-lang.org)
 * [sbt-sonatype](https://github.com/xerial/sbt-sonatype)
 * [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
   * tag, create, release artifact
 * [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
 * release site and jar
+* home icon (at top)
+* remove .html from links
 
 ### Later
 
