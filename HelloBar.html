@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Laika 0.18.2 + Helium Theme" />
-    <title>Hello Laika</title>
+    <title>Hello Bar</title>
     
     
       <meta name="description" content="axle-docs"/>
@@ -48,9 +48,9 @@
       </div>
       
       <ul class="nav-list">
-        <li class="level1"><a href="HelloBar.html">Hello Bar</a></li>
+        <li class="level1 active"><a href="#">Hello Bar</a></li>
         <li class="level1"><a href="HelloMdoc.html">Hello MDoc</a></li>
-        <li class="level1 active"><a href="#">Hello Laika</a></li>
+        <li class="level1"><a href="hello_laika.html">Hello Laika</a></li>
       </ul>
       
     </nav>
@@ -58,12 +58,9 @@
     <div id="container">
 
       <nav id="page-nav">
-        <p class="header"><a href="#">Hello Laika</a></p>
+        <p class="header"><a href="#">Hello Bar</a></p>
         
         <ul class="nav-list">
-          <li class="level1"><a href="#this-is-the-documentation">This is the documentation</a></li>
-          <li class="level2"><a href="#theory-section">Theory Section</a></li>
-          <li class="level2"><a href="#examples-section">Examples Section</a></li>
         </ul>
         
         <p class="footer"></p>
@@ -71,19 +68,18 @@
 
       <main class="content">
 
-        <h1 id="hello-laika" class="title">Hello Laika</h1>
-        <p>text</p>
-        
-        <h2 id="this-is-the-documentation" class="section"><a class="anchor-link left" href="#this-is-the-documentation"><i class="icofont-laika">&#xef71;</i></a>This is the documentation</h2>
-        <p>Lorem ipsum</p>
-        
-        <h3 id="theory-section" class="section"><a class="anchor-link left" href="#theory-section"><i class="icofont-laika">&#xef71;</i></a>Theory Section</h3>
-        <p>Theory</p>
-        
-        <h3 id="examples-section" class="section"><a class="anchor-link left" href="#examples-section"><i class="icofont-laika">&#xef71;</i></a>Examples Section</h3>
-        <p>Example A</p>
-        <pre class="keep-together pdf epub"><code class="nohighlight"><span class="keyword">val</span><span> </span><span class="identifier">y</span><span> = </span><span class="number-literal">42</span><span>
-</span><span class="comment">// y: Int = 42</span></code></pre>
+        <h1 id="hello-bar" class="title">Hello Bar</h1>
+        <p>hello, Bar! (mdoc)</p>
+        <pre class="keep-together pdf epub"><code class="nohighlight"><span class="keyword">val</span><span> </span><span class="identifier">x</span><span> = </span><span class="number-literal">1</span><span>
+</span><span class="comment">// x: Int = 1
+</span><span>
+</span><span class="type-name">List</span><span>(</span><span class="identifier">x</span><span>, </span><span class="identifier">x</span><span>)
+</span><span class="comment">// res0: List[Int] = List(1, 1)</span></code></pre>
+        <p>Hit the Bar</p>
+        <pre class="keep-together pdf epub"><code class="nohighlight"><span class="keyword">import</span><span> </span><span class="identifier">axle</span><span>.</span><span class="identifier">cicd</span><span>.</span><span class="type-name">Bar</span><span>
+
+</span><span class="keyword">val</span><span> </span><span class="identifier">bar</span><span> = </span><span class="type-name">Bar</span><span>(</span><span class="number-literal">3.14</span><span>, </span><span class="number-literal">2.7</span><span>)
+</span><span class="comment">// bar: Bar = Bar(x = 3.14, y = 2.7)</span></code></pre>
 
       </main>
 
