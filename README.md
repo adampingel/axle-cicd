@@ -10,12 +10,15 @@ testbed for refreshing tools in axle release process
 * [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
 * release site and jar
 
-### Later
+### Before port to axle
 
 * home icon (at top)
 * remove .html from links
 * stale Hello MDoc lingers
 * custom 404
+
+### Later
+
 * deploy to container, local k8s cluster, etc
 * test coverage report
 * security scan

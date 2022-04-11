@@ -19,5 +19,7 @@ Foo Theory
 Example A
 
 ```scala mdoc
-val a = Foo("A", 42)
+import axle.cicd.foo.Foo
+
+val a = Foo(3.14, 2.7)
 ```
