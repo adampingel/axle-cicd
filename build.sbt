@@ -2,11 +2,15 @@ val scala3Version = "3.1.1"
 
 lazy val foo = project
   .in(file("axle-foo"))
+  .enablePlugins(Sonatype)
   .settings(
     name := "axle-foo",
+    organization := "org.axle-lang",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
-    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
+    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test",
+    publishTo := sonatypePublishToBundle.value,
+    sonatypeProfileName := "org.axle-lang"
   )
 
 lazy val docs = project
@@ -24,3 +28,4 @@ lazy val docs = project
     siteSourceDirectory := file("docs/target/docs/site/"),
     git.remoteRepo := "git@github.com:adampingel/axle-cicd.git"
   )
+
