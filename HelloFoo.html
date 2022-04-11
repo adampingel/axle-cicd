@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Laika 0.18.2 + Helium Theme" />
-    <title>Hello Laika</title>
+    <title>Hello Foo</title>
     
     
       <meta name="description" content="axle-docs"/>
@@ -49,9 +49,9 @@
       
       <ul class="nav-list">
         <li class="level1"><a href="HelloBar.html">Hello Bar</a></li>
-        <li class="level1"><a href="HelloFoo.html">Hello Foo</a></li>
+        <li class="level1 active"><a href="#">Hello Foo</a></li>
         <li class="level1"><a href="HelloMdoc.html">Hello MDoc</a></li>
-        <li class="level1 active"><a href="#">Hello Laika</a></li>
+        <li class="level1"><a href="hello_laika.html">Hello Laika</a></li>
       </ul>
       
     </nav>
@@ -59,7 +59,7 @@
     <div id="container">
 
       <nav id="page-nav">
-        <p class="header"><a href="#">Hello Laika</a></p>
+        <p class="header"><a href="#">Hello Foo</a></p>
         
         <ul class="nav-list">
           <li class="level1"><a href="#this-is-the-documentation">This is the documentation</a></li>
@@ -72,19 +72,26 @@
 
       <main class="content">
 
-        <h1 id="hello-laika" class="title">Hello Laika</h1>
-        <p>text</p>
+        <h1 id="hello-foo" class="title">Hello Foo</h1>
+        <p>Foo</p>
         
         <h2 id="this-is-the-documentation" class="section"><a class="anchor-link left" href="#this-is-the-documentation"><i class="icofont-laika">&#xef71;</i></a>This is the documentation</h2>
         <p>Lorem ipsum</p>
         
         <h3 id="theory-section" class="section"><a class="anchor-link left" href="#theory-section"><i class="icofont-laika">&#xef71;</i></a>Theory Section</h3>
-        <p>Theory</p>
+        <p>Foo Theory</p>
+        <ol class="arabic">
+          <li>Axiom</li>
+          <li>Axiom</li>
+          <li>Axiom</li>
+        </ol>
         
         <h3 id="examples-section" class="section"><a class="anchor-link left" href="#examples-section"><i class="icofont-laika">&#xef71;</i></a>Examples Section</h3>
         <p>Example A</p>
-        <pre class="keep-together pdf epub"><code class="nohighlight"><span class="keyword">val</span><span> </span><span class="identifier">y</span><span> = </span><span class="number-literal">42</span><span>
-</span><span class="comment">// y: Int = 42</span></code></pre>
+        <pre class="keep-together pdf epub"><code class="nohighlight"><span class="keyword">import</span><span> </span><span class="identifier">axle</span><span>.</span><span class="identifier">cicd</span><span>.</span><span class="identifier">foo</span><span>.</span><span class="type-name">Foo</span><span>
+
+</span><span class="keyword">val</span><span> </span><span class="identifier">a</span><span> = </span><span class="type-name">Foo</span><span>(</span><span class="number-literal">3.14</span><span>, </span><span class="number-literal">2.7</span><span>)
+</span><span class="comment">// a: Foo = Foo(x = 3.14, y = 2.7)</span></code></pre>
 
       </main>
 
