@@ -1,6 +1,6 @@
-# Hello Laika
+# Hello Foo
 
-text
+Foo
 
 ## This is the documentation
 
@@ -8,12 +8,16 @@ Lorem ipsum
 
 ### Theory Section
 
-Theory
+Foo Theory
+
+1. Axiom
+1. Axiom
+1. Axiom
 
 ### Examples Section
 
 Example A
 
 ```scala mdoc
-val y = 42
+val a = Foo("A", 42)
 ```
