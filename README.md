@@ -4,15 +4,12 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-### Site
-
-* dns alias for cicd.axle-lang.org
-  * [custom domain for github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
-
-### Release via git tag
-
-* [sbt-ci-release](https://github.com/sbt/sbt-ci-release) sbt plugin (tag, create, release artifact)
-* Spiewak’s gh action sbt plugin (compile via github action & run tests)
+* [custom domain for github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+  * use [https://cicd.axle-lang.org](https://cicd.axle-lang.org)
+* [sbt-sonatype](https://github.com/xerial/sbt-sonatype)
+* [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
+  * tag, create, release artifact
+* [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
 * release site and jar
 
 ### Later
@@ -54,3 +51,5 @@ Verify by browsing to the [site](https://adampingel.github.io/axle-cicd/)
 * [sbt-site](https://www.scala-sbt.org/sbt-site/)
 * [sbt-ghpages](https://github.com/sbt/sbt-ghpages)
   * Note the instructions to set up a `gh-pages` branch
+* [custom domain for github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+  * Note instructions for apex domains
