@@ -1,10 +1,9 @@
 val scala3Version = "3.1.1"
 
-lazy val foo = project
-  .in(file("axle-foo"))
+def jarify(p: Project): Project =
+  p
   .enablePlugins(Sonatype)
   .settings(
-    name := "axle-foo",
     organization := "org.axle-lang",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
@@ -12,8 +11,12 @@ lazy val foo = project
     publishTo := sonatypePublishToBundle.value
   )
 
+lazy val foo = jarify(Project("foo", file("axle-foo")))
+
+lazy val bar = jarify(Project("bar", file("axle-bar")))
+
 lazy val docs = project
-  .dependsOn(foo)
+  .dependsOn(foo, bar)
   .enablePlugins(MdocPlugin, LaikaPlugin, SitePlugin, GhpagesPlugin)
   .settings(
     name := "axle-docs",
