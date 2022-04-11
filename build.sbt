@@ -24,10 +24,11 @@ lazy val docs = project
     mdocIn := file("axle-docs/src/site/mdoc"),
     mdocOut := file("axle-docs/target/mdoc"),
     Laika / sourceDirectories := Seq(file("axle-docs/target/mdoc")),
+    laikaSite / target := file("axle-docs/target/site"),
     laikaExtensions ++= Seq(
       laika.markdown.github.GitHubFlavor,
       laika.parse.code.SyntaxHighlighting),
-    siteSourceDirectory := file("docs/target/docs/site/"),
+    siteSourceDirectory := file("axle-docs/target/site"),
     git.remoteRepo := "git@github.com:adampingel/axle-cicd.git"
   )
 
