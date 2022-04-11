@@ -9,11 +9,12 @@ testbed for refreshing tools in axle release process
   * tag, create, release artifact
 * [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
 * release site and jar
-* home icon (at top)
-* remove .html from links
 
 ### Later
 
+* home icon (at top)
+* remove .html from links
+* stale Hello MDoc lingers
 * deploy to container, local k8s cluster, etc
 * test coverage report
 * security scan
