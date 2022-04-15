@@ -4,11 +4,10 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-* [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
-  * fix sbt-sonatype?
-  * tag, create, release artifact
-* [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
-* release site and jar
+* verify site release
+* sbt-ci-release
+  * non-snapshot releases failing
+  * See evidence from [build 14](https://github.com/adampingel/axle-cicd/actions/runs/2171167104) that whatever is being signed doesn't exist, which is seemingly resulting in the ioctl error
 
 ### Before port to axle
 
@@ -39,11 +38,7 @@ target: https://cicd.axle-lang.org
 
 ## Usage
 
-`sbt compile`
-`sbt run`
-`sbt console`
-
-## Build steps
+## Update site
 
 ```bash
 sbt clean docs/mdoc docs/laikaSite
@@ -60,6 +55,39 @@ sbt docs/ghpagesCleanSite docs/ghpagesPushSite
 ```
 
 Verify by browsing to the [site](https://adampingel.github.io/axle-cicd/)
+
+### Publish snapshots
+
+Push commits to repo.
+
+Monitor [progress](https://github.com/adampingel/axle-cicd/actions/workflows/release.yml) of github action.
+
+Confirm jars are present at the [sonatype snapshot repo](https://oss.sonatype.org/content/repositories/snapshots/org/axle-lang/)
+
+### Release new version
+
+For example, tag with a version:
+
+```bash
+git tag -a v0.1.6 -m "v.0.1.6"
+git push origin v0.1.6
+```
+
+Monitor [progress](https://github.com/adampingel/axle-cicd/actions/workflows/release.yml)
+
+Confirm jars are present at the [sonatype repo](https://oss.sonatype.org/content/repositories/releases/org/axle-lang/)
+
+## Old steps
+
+* Log in to [sonatype](https://oss.sonatype.org/) using credentials in `~/.sbt/1.0/sonatype.sbt`
+* Select "Staging Repositories"
+* find org.axle-lang repository
+* close
+* "closing axle $v"
+* wait
+* find org.axle-lang repository
+* release
+* "releasing axle $v"
 
 ## References
 
