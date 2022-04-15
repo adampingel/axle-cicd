@@ -2,13 +2,22 @@ val scala3Version = "3.1.1"
 
 def jarify(p: Project): Project =
   p
-  .enablePlugins(Sonatype)
+//  .enablePlugins(Sonatype)
   .settings(
     organization := "org.axle-lang",
+    homepage := Some(url("https://cicd.axle-lang.org")),
+    licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
+    developers := List(
+    Developer(
+      "adampingel",
+      "Adam Pingel",
+      "adam@axle-lang.org",
+      url("https://twitter.com/pingel")
+    )),
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
-    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test",
-    publishTo := sonatypePublishToBundle.value
+    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
+//    publishTo := sonatypePublishToBundle.value
   )
 
 lazy val foo = jarify(Project("foo", file("axle-foo")))
