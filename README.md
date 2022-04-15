@@ -4,14 +4,17 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-* [sbt-sonatype](https://github.com/xerial/sbt-sonatype)
-
 * [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
+  * fix sbt-sonatype?
   * tag, create, release artifact
 * [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions)
 * release site and jar
 
 ### Before port to axle
+
+* generate image during axle-foo test and then move into laika site
+* home icon (at top)
+* remove .html from links
 
 * What's writing to `./docs`?
 
@@ -25,10 +28,6 @@ target: https://cicd.axle-lang.org
 
 * google analytics
 * ghpagesCleanSite leaving stale HelloMDoc.html
-
-* generate image during axle-foo test and then move into laika site
-* home icon (at top)
-* remove .html from links
 
 ### Later
 
@@ -71,3 +70,5 @@ Verify by browsing to the [site](https://adampingel.github.io/axle-cicd/)
   * Note the instructions to set up a `gh-pages` branch
 * [custom domain for github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
   * Note instructions for apex domains
+* [sbt-sonatype](https://github.com/xerial/sbt-sonatype)
+* [sbt-ci-release](https://github.com/sbt/sbt-ci-release)
