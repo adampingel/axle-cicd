@@ -38,7 +38,7 @@ lazy val docs = project
       laika.markdown.github.GitHubFlavor,
       laika.parse.code.SyntaxHighlighting),
     siteSourceDirectory := file("axle-docs/target/site"),
-    excludeFilter in ghpagesCleanSite :=
+    ghpagesCleanSite / excludeFilter :=
       new FileFilter{
         def accept(f: File) = (ghpagesRepository.value / "CNAME").getCanonicalPath == f.getCanonicalPath
       } || "versions.html",
