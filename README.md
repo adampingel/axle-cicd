@@ -54,6 +54,8 @@ then browse to [https://localhost:4242](https://localhost:4242)
 sbt docs/ghpagesCleanSite docs/ghpagesPushSite
 ```
 
+Monitor [https://github.com/adampingel/axle-cicd/actions/workflows/pages/pages-build-deployment](progress) of action.
+
 Verify by browsing to the [site](https://adampingel.github.io/axle-cicd/)
 
 ### Publish snapshots
