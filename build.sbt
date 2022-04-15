@@ -16,6 +16,7 @@ def jarify(p: Project): Project =
     )),
 //    version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
+    versionScheme := Some("early-semver"),
     libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
 //    publishTo := sonatypePublishToBundle.value
   )
