@@ -1,5 +1,7 @@
 val scala3Version = "3.1.1"
 
+ThisBuild / versionScheme := Some("early-semver")
+
 def jarify(p: Project): Project =
   p
 //  .enablePlugins(Sonatype)
