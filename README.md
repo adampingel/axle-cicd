@@ -4,7 +4,7 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-Confirm v0.1.10 made it to [maven central](https://repo1.maven.org/maven2/org/axle-lang/)
+things to do
 
 ### Before port to axle
 
