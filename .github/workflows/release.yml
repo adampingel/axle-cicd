@@ -11,6 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: olafurpg/setup-scala@v13
+      - run: gpg --list-keys
       - run: sbt 'project foo' ci-release
         env:
           PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
