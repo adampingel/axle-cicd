@@ -4,9 +4,8 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-* verify site release
 * sbt-ci-release
-  * non-snapshot releases failing
+  * non-snapshot releases failing from gh action
   * See evidence from [build 14](https://github.com/adampingel/axle-cicd/actions/runs/2171167104) that whatever is being signed doesn't exist, which is seemingly resulting in the ioctl error
 
 ### Before port to axle
@@ -14,6 +13,7 @@ testbed for refreshing tools in axle release process
 * generate image during axle-foo test and then move into laika site
 * home icon (at top)
 * remove .html from links
+* latest released version badge
 
 * What's writing to `./docs`?
 
