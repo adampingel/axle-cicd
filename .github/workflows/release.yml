@@ -14,13 +14,13 @@ jobs:
       - run: gpg --list-keys
       - run: |
           mkdir -p ~/.gnupg
-	  umask 077
+          umask 077
           echo "charset utf-8" > ~/.gnupg/gpg.conf
           echo "use-agent" >> ~/.gnupg/gpg.conf
           echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-	  cat ~/.gnupg/gpg.conf
+          cat ~/.gnupg/gpg.conf
           echo "allow-loopback-pinentry" > ~/.gnupg/gpg-agent.conf
-	  cat ~/.gnupg/gpg-agent.conf
+          cat ~/.gnupg/gpg-agent.conf
       - run: sbt 'project foo' ci-release
         env:
           PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
