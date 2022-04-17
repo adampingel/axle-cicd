@@ -4,9 +4,7 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-* sbt-ci-release
-  * non-snapshot releases failing from gh action
-  * See evidence from [build 14](https://github.com/adampingel/axle-cicd/actions/runs/2171167104) that whatever is being signed doesn't exist, which is seemingly resulting in the ioctl error
+Confirm v0.1.10 made it to [maven central](https://repo1.maven.org/maven2/org/axle-lang/)
 
 ### Before port to axle
 
