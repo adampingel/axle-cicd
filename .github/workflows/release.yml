@@ -11,21 +11,21 @@ jobs:
         with:
           fetch-depth: 0
       - uses: olafurpg/setup-scala@v13
-      - run: gpg --list-keys
       - run: |
           umask 077
           mkdir -p ~/.gnupg
-          ls -l ~/.gnupg
+          ls -ld ~/.gnupg
+          echo
           echo "charset utf-8" > ~/.gnupg/gpg.conf
           echo "use-agent" >> ~/.gnupg/gpg.conf
           echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          echo "CONTENTS OF: ~/.gnupg/gpg.conf"
           ls -l ~/.gnupg/gpg.conf
+          echo "CONTENTS OF: ~/.gnupg/gpg.conf"
           cat ~/.gnupg/gpg.conf
           echo
           echo "allow-loopback-pinentry" > ~/.gnupg/gpg-agent.conf
-          echo "CONTENTS OF: ~/.gnupg/gpg-agent.conf"
           ls -l ~/.gnupg/gpg-agent.conf
+          echo "CONTENTS OF: ~/.gnupg/gpg-agent.conf"
           cat ~/.gnupg/gpg-agent.conf
           echo
       - run: sbt 'project foo' ci-release
