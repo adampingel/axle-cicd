@@ -5,4 +5,4 @@ import axle.cicd.foo.Foo
 class TestFoo:
   @Test def testX(): Unit =
     val foo = Foo(3.14, 2.7)
-    assertEquals(foo.x, 3.14, 0.00001)
+    assertEquals(foo.x, 2.14, 0.00001)
