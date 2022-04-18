@@ -2,6 +2,8 @@ val scala3Version = "3.1.1"
 
 ThisBuild / versionScheme := Some("early-semver")
 
+publish / skip := true
+
 def jarify(p: Project): Project =
   p
   .settings(
