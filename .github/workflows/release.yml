@@ -28,8 +28,7 @@ jobs:
           echo "CONTENTS OF: ~/.gnupg/gpg-agent.conf"
           cat ~/.gnupg/gpg-agent.conf
           echo
-      - run: sbt 'project foo' test
-      - run: sbt 'project bar' test
+      - run: sbt test
       - run: sbt 'project foo' ci-release
         env:
           PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
