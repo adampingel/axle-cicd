@@ -6,7 +6,6 @@ testbed for refreshing tools in axle release process
 
 ### Port sbt-ci-release to Axle
 
-* ensure failed test halts publish
 * latest released version badge without version.sbt
 
 ### Port gh-pages to Axle
