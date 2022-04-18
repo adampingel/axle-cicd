@@ -6,4 +6,4 @@ import axle.cicd.bar.Bar
 class TestBar:
   @Test def testName(): Unit =
     val bar = Bar("Cheers", 10)
-    assertEquals(bar.name, "Chairs")
+    assertEquals(bar.name, "Cheers")
