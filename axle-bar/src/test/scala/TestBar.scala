@@ -1,10 +1,9 @@
 import org.junit.Test
 import org.junit.Assert.*
 
-class TestBar:
-  @Test def t1(): Unit = 
-    assertEquals("I was compiled by Scala 3. :)", msg)
+import axle.cicd.bar.Bar
 
-  @Test def t2(): Unit =
+class TestBar:
+  @Test def testName(): Unit =
     val bar = Bar("Cheers", 10)
     assertEquals(bar.name, "Cheers")
