@@ -4,11 +4,12 @@ testbed for refreshing tools in axle release process
 
 ## TO DO
 
-### Port sbt-ci-release to Axle
-
-* latest released version badge without version.sbt
-
 ### Port gh-pages to Axle
+
+* latest released version badge
+* ghpagesCleanSite leaving stale HelloMDoc.html
+
+### Port Laika to Axle
 
 * custom 404
 * 404 redirect.  Add this to 404.md header:
@@ -18,22 +19,11 @@ layout: forward
 target: https://cicd.axle-lang.org
 ```
 
-* ghpagesCleanSite leaving stale HelloMDoc.html
-
-### Port Laika to Axle
-
 * What's writing to `./docs`?
 * generate image during axle-foo test and then move into laika site
 * home icon (at top)
 * remove .html from links
 * google analytics
-
-### Later
-
-* deploy to container, local k8s cluster, etc
-* test coverage report
-* security scan (see sonatype emails following release of axle-cicd)
-* performance benchmark
 
 ## Usage
 
